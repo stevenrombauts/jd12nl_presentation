@@ -82,7 +82,7 @@ function main() {
         if (el) {
             var headers = el.getElementsByTagName('header');
             if (headers.length > 0) {
-                return el.getElementsByTagName('header')[0].innerText;
+                return document.all ? el.getElementsByTagName('header')[0].innerText : el.getElementsByTagName('header')[0].textContent;
             }
         }
         return null;
@@ -127,6 +127,14 @@ function main() {
         processContext();
 
         document.getElementsByTagName('title')[0].innerText = getSlideTitle(currentSlideNo);
+
+	// track : 
+	if(typeof Piwik !== 'undefined')
+	{
+		var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+		piwikTracker.setDocumentTitle('#jd12nl - ' + getSlideTitle(currentSlideNo));
+		piwikTracker.trackPageView();
+	}
 
         updatePresenterNotes();
 

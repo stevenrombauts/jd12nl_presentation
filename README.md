@@ -1,11 +1,9 @@
-Automatiseer je Joomla! deployments met Git
-===========================================
+Automate your Joomla! deployment with Git
+=========================================
 
-In deze repository kan je de slides terugvinden (index.html) van de deployment presentatie op Joomladagen 2012.
+This repository contains the slides of the deployment presentation at Joomladagen 2012. Open index.html in your browser to watch the slides, or go straight to http://share.kotuha.be/jd12nl/!
 
-Je kan ze ook bekijken op http://share.kotuha.be/jd12nl/ !
+The slides are based on code from https://github.com/adamzap/landslide 
+Press the 'h' key to view all options.
 
-De slides zijn gebaseerd op code van https://github.com/adamzap/landslide 
-Gebruik de 'h' toets om de mogelijke functies te bekijken.
-
-Indien je verdere vragen zou hebben, kan je me bereiken op [@kotuhaweb](http://twitter.com/kotuhaweb) of via e-mail op steven@timble.net.
+If you have any further questions regarding the contents or the demo, feel free to contact me [@kotuhaweb](http://twitter.com/kotuhaweb)
