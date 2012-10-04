@@ -128,14 +128,6 @@ function main() {
 
         document.getElementsByTagName('title')[0].innerText = getSlideTitle(currentSlideNo);
 
-	// track : 
-	if(typeof Piwik !== 'undefined')
-	{
-		var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
-		piwikTracker.setDocumentTitle('#jd12nl - ' + getSlideTitle(currentSlideNo));
-		piwikTracker.trackPageView();
-	}
-
         updatePresenterNotes();
 
         if (updateOther) { updateOtherPage(); }
